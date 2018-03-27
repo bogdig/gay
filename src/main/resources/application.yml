@@ -1,0 +1,12 @@
+spring:
+  profiles:
+    active: dev
+  datasource:
+    data-username: com.mysql.jdbc.Dirver
+    url: jdbc:mysql://127.0.0.1:3306/dbgay
+    username: root
+    password: shz123000
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
