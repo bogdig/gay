@@ -39,4 +39,13 @@ public class GayService {
             throw new GayException(ResultEnum.MIDDLE_SCHOOL);
         }
     }
+
+    /**
+     * 通过ID查询一个基佬信息
+     * @param id
+     * @return
+     */
+    public Gay findOne(Integer id){
+        return gayRepository.findById(id).get();
+    }
 }
